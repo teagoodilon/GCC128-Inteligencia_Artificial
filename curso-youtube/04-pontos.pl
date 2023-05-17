@@ -8,6 +8,7 @@ position(g, 8, 4).
 position(h, 5, 6).
 position(i, 10, 9).
 
-distance(J, K, D) :- position(J, Xj, Yj),
-                     position(K, Xk, Yk),
-                     D is sqrt((Xj-Xk)**2 + (Yj-Yk)**2).
+distance(J, K, D) :-
+  position(J, Xj, Yj),
+  position(K, Xk, Yk),
+  D is sqrt((Xj-Xk)**2 + (Yj-Yk)**2).
